@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav style="background-color: #ebe9e9;">
+        <div class="nav_content container">
+            <input type="text" id="weatherSearch" placeholder="Type city name">
+            <button onclick="weatherCall()">Search</button>
+        </div>
+    </nav>
+    <main>
+        <section class="weather" style="background-color: #ebe9e9;">
+            <div class="weather_container container" style="background-color: white; border-radius: 20px;">
+                <div class="weather_main">
+                    <div class="weather_main_left">
+                        <div class="weather_left_head color1 display-flex">
+                            <p id="cityNameHtml">City Name<p>
+                            <h4 id="weatherDate">21.04.2021</h4>
+                        </div>
+                        <div class="weather_main_temp color1 display-flex">
+                            <div class="weather_big-temp">
+                                <h1 style="font-size: 13rem;"><span id="bigTemp">20</span>&deg;</h1>
+                                <div class="weather_wind-hum">
+                                    <p class="display-flex" style="align-items: center; gap: 10%;">
+                                        <i class="fa-solid fa-wind"></i>
+                                        <span id="wind">63.3</span>mph
+                                    </p>
+                                    <p class="display-flex" style="align-items: center; gap: 10%;">
+                                        <img src="asset/img/humidity.png" width="25%" alt="humidity">
+                                        <span id="humidity">90</span>%
+                                    </p>
+                                </div>
+                                <h3 id="weatherMain">Cloudy</h3>
+                                <p class="weatherDescript">Description: <span id="weatherDescription"></span></p>
+                                <p class="weatherDescript">
+                                    Feels Like: <span id="feelsLike"></span>&deg;C
+                                </p>
+                            </div>
+                        </div>
+                        <div class="weather_card_container display-grid container2" id="weatherCard">
+                            <div class="weather_card">
+                                <p class="cardTime">22</p>
+                                <p class="card_temp"><span class="cardTemp"></span>&deg;</p>
+                                <p class="cardWeather">11</p>
+                            </div>
+                            <div class="weather_card">
+                                <p class="cardTime">33</p>
+                                <p class="card_temp"><span class="cardTemp"></span>&deg;</p>
+                                <p class="cardWeather">22</p>
+                            </div>
+                            <div class="weather_card">
+                                <p class="cardTime">33</p>
+                                <p class="card_temp"><span class="cardTemp"></span>&deg;</p>
+                                <p class="cardWeather">32</p>
+                            </div>
+                            <div class="weather_card">
+                                <p class="cardTime">12</p>
+                                <p class="card_temp"><span class="cardTemp"></span>&deg;</p>
+                                <p class="cardWeather">3</p>
+                            </div>
+                            <div class="weather_card">
+                                <p class="cardTime">3</p>
+                                <p class="card_temp"><span class="cardTemp"></span>&deg;</p>
+                                <p class="cardWeather">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather_main_right"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
